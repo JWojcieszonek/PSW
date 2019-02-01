@@ -1,0 +1,14 @@
+body{ font-family: arial, helvetica, sans-serif; background-color: powderblue}
+#name{border-style: dashed; width: 200px;height: 300px;}
+#lastName{border-width: 10px;border-color:pink}
+#month{margin: 100px}
+#email{padding: 80px;position: absolute;right: 25%;}
+.topRightFixed{position: fixed; top: 0;right: 10px;}
+input:focus{border: blue} 
+input:checked{height: 20px; width:20px;}  
+input:disabled{ background: #dddddd;}
+p:empty{background: #dddddd;width: 400px; height: 100px;}
+input:enabled{border-style: double}
+:not(input){color: red}
+input:required{background: yellow}
+

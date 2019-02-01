@@ -1,0 +1,11 @@
+body{ font-family: arial, helvetica, sans-serif; background-color: powderblue}
+table{width: 50%; border-collapse:collapse; margin: 30px}
+th{border: 2px solid black;height: 30px;text-align: left; padding: 5px; background-color: magenta}
+#tab th{background-color:mediumaquamarine}
+td{border: 2px solid black;height: 30px;vertical-align: top;padding:15px;}
+td:hover{background-color: grey}
+tr:nth-child(even){background-color:cornflowerblue}
+tr:nth-last-child(even){border-style: dashed }
+tr:first-child{text-decoration: underline}
+tr:last-child{color: orange}
+tr:only-child{font-style: italic}

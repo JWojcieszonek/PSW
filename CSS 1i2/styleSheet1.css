@@ -1,0 +1,98 @@
+body/*background image*/
+{
+    font-family: arial, helvetica, sans-serif;
+    background-image: url(pwr.png);
+    background-repeat: repeat;
+    background-position-x: 50px;
+    background-position-y:100px;
+    background-attachment: fixed;   
+}
+h1{font-size: 250%; text-shadow: 3px 3px 3px yellow}
+h2{font-size: 2em}
+h3{font-size: 20pt}
+h4{font-size: 20px}
+
+p em {color:red}
+#p1{font-style: italic;width: 40%;text-align: center}
+#p2{font-variant: small-caps; line-height: 200%;height: 300px; width: 30%;text-align: right;overflow: scroll}
+#p3{font-weight:bolder;line-height: 200%}
+
+#d1
+{
+    float: left;
+    border: 2px solid hsla(221, 96%, 78%, 0.7);
+    width: 100px;height: 100px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 10px hsla(221, 96%, 38%, 0.5); /*boxshadow*/
+    background:-webkit-gradient(
+        linear, center top, center bottom,
+        color-stop(0%,white),
+        color-stop(50%, hsla(221, 96%, 78%, 0.7)),
+        color-stop(75%, hsla(221, 96%, 38%, 0.9)));
+    background:-moz-linear-gradient(top left, white 15%,plum 50%,purple 75%);
+    background: linear-gradient(180deg, white 0%,hsla(221, 96%, 78%, 0.7) 20%,hsla(221, 96%, 38%, 0.9) 50%)
+}
+#d2
+{
+    border:2px solid rgba(208, 65, 251, 0.5);
+    box-shadow: 5px 5px 5px rgba(208, 65, 251, 0.3);
+    background:-webkit-gradient(
+        linear, left, right,color-stop(0%,white),
+        color-stop(50%, rgba(208, 65, 251, 0.5)),
+        color-stop(75%,rgba(208, 65, 251, 0.3)));
+    background:-moz-linear-gradient(left, white 15%,plum 50%,purple 75%);
+    background: linear-gradient(90deg, white 0%,rgba(208, 65, 251, 0.5) 50%,rgba(208, 65, 251, 1.0) 75%)
+    
+}
+#d3
+{
+    clear: left;
+    border: 2px solid rgba(118, 223, 127, 0.7);
+    width: 100px;
+    height: 100px;
+    border-radius:50px;
+    box-shadow: 50px 0px 5px rgba(118, 223, 127, 0.3);
+    background:-webkit-radial-gradient(red,rgba(118, 223, 127, 1.0));
+    background:-moz-radial-gradient(red,rgba(118, 223, 127, 1.0));
+    background: radial-gradient(red,rgba(118, 223, 127, 1.0))
+}
+#d4
+{
+    float: left;
+    border:2px solid hsla(30, 70%, 50%, 1.0);
+    width: 200px;height:100px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius:50px;
+    box-shadow: 30px -10px 0px hsla(30, 90%, 80%, 0.8);
+    background:-webkit-gradient(
+        linear, right top, left bottom,color-stop(0%,white),
+        color-stop(50%, hsla(221, 96%, 78%, 0.7)),
+        color-stop(75%, hsla(221, 96%, 38%, 0.9)));
+    background:-moz-linear-gradient(top left, white 15%,plum 50%,purple 75%);
+    background: linear-gradient(45deg, white 0%,hsla(221, 96%, 78%, 0.7) 20%,hsla(221, 96%, 38%, 0.9) 50%)
+}
+
+#d5 /*background image*/
+{   height: 100px;
+    border: 10px solid rgba(118, 223, 127, 0.3);   
+    background-image: url(back2.jpg);
+    background-repeat: repeat-x;
+    background-origin: content-box;
+    margin: 20px
+}
+:target{text-decoration: underline}
+
+@media print
+{
+    h1{font-size: 100%}
+    h2{font-size: 100%}
+    h3{font-size: 100%}
+    h4{font-size: 100%}
+
+    body{background-color: white}
+    #p2{height: 0; width: 0}
+    #d3{clear: left; border: 1px solid black;width: 100px;height: 100px;}
+    #d1{float: left; border: 2px solid black;width: 100px;height: 100px;}
+}

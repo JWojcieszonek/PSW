@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+            <meta charset="utf-8">
+            <title>Form</title>
+    </head>
+    <body>
+        <form method = "post" action = "http://www.google.com" autocomplete="on">
+            <p>
+                <label>Name:
+                        <input id = "name" type="text" size="20" maxlength="10" autofocus>(Text)
+                </label>
+            </p>
+            <p>
+                <label>Last name:
+                    <input id = "lastname" type="text" size="30" maxlength="30" required> (Text)
+                </label>
+            </p>
+            <p>
+                <label>Month of birth:
+                    <input list = "monthsList" id="month">
+                    <datalist id="monthsList">
+                        <option value="January">
+                        <option value="February">
+                        <option value="March">
+                        <option value="April">
+                        <option value="May">
+                        <option value="June">
+                        <option value="July">
+                        <option value="August">
+                        <option value="September">
+                        <option value="October">
+                        <option value="November">
+                        <option value="December">
+                    </datalist>
+                </label>
+            </p>
+            <p>
+                <label>E-mail:
+                    <input id = "email" type="email" required> (name@domain.com)
+                </label>
+            </p>
+            <p>
+                <label>Phone:
+                     <input id = "phone" type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"> (000000000)
+                </label>
+            </p>
+            <p>
+                <input type = "submit" value = "Submit">
+                <input type = "reset" value = "Clear">
+            </p>
+        </form>
+    </body>
+</html>

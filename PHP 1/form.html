@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+            <meta charset="utf-8">
+            <meta name="keywords" content="design, web, page, web page, HTML5, PSW, CSS">
+            <meta name="description" content="Home page">
+            <title >Form</title>
+            <style type = "text/css">
+                label  { width:85em; float: left; }
+                div {padding: 5px;}
+            </style>
+    </head>
+    <body>
+        <form method = "post" action = "form.php" >
+            <div><label>First name:</label>
+            <input type = "text" name = "firstName"></div>
+
+            <div><label>Last name:</label>
+            <input type = "text" name = "lastName"></div>
+
+            <div><label>Email:</label>
+            <input type = "text" name = "email"></div>
+
+            <div><label>Year of birth:</label>
+            <input type = "text" name = "year" maxlength="4"></div>
+
+            <div><label>Number a:</label>
+            <input type = "text" name = "numA"></div>
+
+            <div><label>Number b:</label>
+            <input type = "text" name = "numB"></div>
+
+            <div><label>Binary:</label>
+            <input type = "text" name = "binary" pattern="[0-1]{1,10}" maxlength="10"></div>
+
+            <div><label>PRogramiing languages:</label><br>
+            <input type="checkbox" name="languages[]" value="1">Java<br>
+            <input type="checkbox" name="languages[]" value="2">C<br>
+            <input type="checkbox" name="languages[]" value="3">C#<br>
+            <input type="checkbox" name="languages[]" value="4">PHP<br>
+            <input type="checkbox" name="languages[]" value="5">Python<br>
+            </div>
+            <p><input type = "submit" name = "submit" value = "Register"></p>
+            
+        </form>
+
+        
+
+        
+                
+
+    </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+            <meta charset="utf-8">
+            <meta name="keywords" content="design, web, page, web page, HTML5, PSW, CSS">
+            <meta name="description" content="Home page">
+            <script src="script.js"></script>
+            <script src="script2.js"></script>
+            <script src="script3.js"></script>
+            <script src="script4.js"></script>
+            <script src="script5.js"></script>
+            <link rel="stylesheet" href="style1.css">
+            <title >Home</title>
+    </head>
+    <body>
+        <a name ="zad1"><h1>Zadanie 1</h1></a>
+        <label>Element
+            <input id="elem" type="text" maxlength="20">
+        </label>
+        <div>
+        <button id="btn1" onclick="append()">Append</button>
+        <button id="btn2" onclick="insert()">Insert</button>
+        <button id="btn3" onclick="replace()">Replace</button>
+        <button id="btn3" onclick="remove()">Remove</button>
+        </div>
+        
+        <ul id="ul1"></ul>
+
+        <a name="zad2"><h1>Zadanie 2</h1></a>
+        <div>
+            <a href="http://www.youtube.com"> <img id="img1" src="img1.png" width=128 height =90></a><br>
+            <a href="http://pwr.edu.pl"><img id="img2" src="img2.png" width=100 height =145></a><br>
+            <a href="http://wiz.pwr.edu.pl"><img id="img3" src="img3.jpg" width=200 height =200></a>
+        </div>
+
+        <form id="name">
+            Name:<input type="text" maxlength="20" value="Jakub">
+        </form>
+
+        <form id="lastName">
+            Last name:<input type="text" maxlength="20" value="Wojcieszonek">
+        </form>
+
+        <p>Links:</p>
+        <div id="div1"></div>
+
+        <p>Image sources:</p>
+        <div id="div2"></div>
+
+        <p>Name of user:</p>
+        <p id="p1"></p>
+        <button onclick="getName()">get name</button>
+
+        <p id="p2">Number of anchors:</p>
+        <button onclick="numberOfAnchors()">go</button>
+
+        <a name="zad 3"><h1>Zadanie 3</h1></a>
+        <p>Choose background color </p>
+        <select id="select1" onchange="changeBackground()">
+            <option>White</option>
+            <option>Gray</option>
+            <option>Yellow</option>
+            <option>Green</option>
+            <option>Blue</option>
+        </select>
+
+        <p>Choose text color </p>
+        <select id="select2" onchange="changeText()"> 
+            <option>White</option>
+            <option>Gray</option>
+            <option>Yellow</option>
+            <option>Green</option>
+            <option>Blue</option>
+           <option>Red</option>
+        </select>
+
+        <p>Choose font</p>
+        <select id="select3" onchange="changeFont()"> 
+            <option value="Arial">Arial</option>
+            <option value ="Times New Roman">Times New Roman</option>
+            <option value="Comic Sans MS">Comic Sans</option>
+        </select>
+
+        <a name="zad 4"><h1>Zadanie 4</h1></a>
+        <p id="p3"></p>
+        
+        <table id="canvas">
+            <tbody  onclick="showCoordinates(event)" id="tabBody"></tbody>
+        </table>
+        
+        <img src="img2.png" id="pwr" width="100" height ="145">
+        <p id="text">
+            Na stronach rozwijanej od początku semestru witryny WWW należy:<br>
+            1. Zademonstrować działanie metod JavaScript: createElement,<br>
+            createTextNode, appendChild, insertBefore,<br>
+            replaceChild, removeChild oraz właściwości parentNode.<br>
+            2. Zademonstrować działanie kolekcji: images, links, forms, anchors<br>
+            oraz metod item i namedItem.<br>
+            3. Umożliwić użytkownikowi zmianę na żądanie stylów CSS: koloru tła, koloru tekstu,<br>
+            rodzaju czcionki (z listy).<br>
+            4. Zademonstrować możliwości właściwości altKey, ctrlKey, shiftKey<br>
+            keyCode, clientX, clientY, screenX, screenY obiektu event.<br>
+            Wykorzystać zdarzenia: mousemove, mousedown, mouseover, mouseout.<br>
+            5. W formularzach wykorzystać zdarzenia focus i blur do wyświetlania tekstów<br>
+            pomocy oraz zdarzenia submit i reset do wyzwalania okien potwierdzających. <br>
+        </p>
+        <a name="zad 5"><h1>Zadanie 5</h1></a>
+        <p id = "help"></p>
+
+        <form id="form" method = "post" action = "home.html" >
+                <div><label>First name:</label>
+                <input id="firstName" type = "text" name = "firstName"size="30" maxlength="20" ></div>
+    
+                <div><label>Last name:</label>
+                <input id="lastName2" type = "text" name = "lastName"size="30" maxlength="30"  ></div>
+    
+                <div><label>Email:</label>
+                <input id="email" type = "email" name = "email"size="30" ></div>
+
+                <div><label>Phone:</label>
+                 <input id = "phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" ></div>
+    
+                <div><label>Password:</label>
+                <input id="password" type = "password" name = "password" ></div>
+    
+                <div><label>Year of birth:</label>
+                <input id="year" type = "text" name = "year" maxlength="4" ></div>
+                <input type = "submit" value = "Submit">
+                <input type = "reset" value = "Clear">
+                
+        </form>
+    </body>
+</html>

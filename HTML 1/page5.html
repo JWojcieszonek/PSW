@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<title>Fomularz</title>
+	</head>
+	<body>
+		<h2>Wypełnij formularz</h2>
+		
+		<form method="post" action="http://www.google.com">
+		<p><label>Imię:
+			<input name = "imie" type="text" size="20" maxlength="10">
+			</label></p>
+		<p><label>Nazwisko:
+			<input name = "nazwisko" type="text" size="30" maxlength="30" autofocus>
+			</label></p>
+		<p><label>Miasto:
+			<input name = "imie" type="text" size="35" maxlength="35">
+			</label></p>
+		<p>
+			<label>Wiek:
+			<select name="wiek">
+				<option selected>18</option>
+				<option>19</option>
+				<option>20</option>
+				<option>21</option>
+				<option>22</option>
+				<option>23</option>
+				<option>24</option>
+				<option>25</option>
+				<option>26</option>
+				<option>27</option>
+				<option>28</option>
+			</select>
+			</label>
+		</p>
+		<p>
+			Płeć:
+			<label>Męzczyzna
+				<input name="plec" type="radio" value="Mężczyzna"></label>
+			<label>Kobieta
+				<input name="plec" type="radio" value="Mężczyzna"></label>
+		</p>
+		<p>
+			Języki programowania:
+			<label>Java
+				<input name="plec" type="checkbox" value="Java"></label>
+			<label>C++
+				<input name="plec" type="checkbox" value="C++"></label>
+			<label>C#
+				<input name="plec" type="checkbox" value="C#"></label>
+			<label>PHP
+				<input name="plec" type="checkbox" value="PHP"></label>
+			<label>Scala
+				<input name="plec" type="checkbox" value="Scala"></label>
+		</p>
+		<p><label>Tekst:<br>
+			<textarea name="tekst"
+			rows="5" cols="40" maxlength="20"></textarea>
+			</label></p>
+			
+		<p>
+               <input type = "submit" value = "Wyślij">
+               <input type = "reset" value = "Wyczyść">
+        </p>
+		</form>
+			
+			
+			
+			
+	</body>
+</html>

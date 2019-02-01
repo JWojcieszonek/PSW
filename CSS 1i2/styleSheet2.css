@@ -1,0 +1,18 @@
+body{ font-family: arial, helvetica, sans-serif; background-image: url(background.jpg); background-size:100%}
+li em{ font-weight: bold; }
+h1{font-size: 250% }
+h2{font-size: 2em}
+h3{font-size: 20pt; color: white}
+h4{font-size: 20px}
+
+a:link{color:gainsboro}
+a:visited{color: yellow}
+a:hover{color: red}
+a:active{font-size: 200%}
+a.over{text-decoration: line-through }
+ul{ margin-left: 20pt;}
+ul{ font-size: .8em; }
+p{color:white}
+li:last-of-type{color: orange}
+li:first-child{color: white}
+p:first-of-type{font-size:200% }
